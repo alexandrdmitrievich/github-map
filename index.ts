@@ -18,12 +18,13 @@ function initMap(): void {
  // const image =
  //   "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
  //const iconco = new google.maps.Icon()
- const image = 'Res/types/SS-R.png'
+ const image = 'Res/regiment/137.png'
   const beachMarker = new google.maps.Marker({
     position: { lat: 48, lng: 37 },
     map,
     icon: {url:image,
-      labelOrigin: new google.maps.Point(0,0)
+      scaledSize: new google.maps.Size(153/2,102/2)
+      //labelOrigin: new google.maps.Point(0,0)
     },
     label: {
       text: "Швидко котята"
