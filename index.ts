@@ -15,14 +15,24 @@ function initMap(): void {
     }
   );
 
-  const image =
-    "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+ // const image =
+ //   "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+ //const iconco = new google.maps.Icon()
+ const image = 'Res/types/SS-R.png'
   const beachMarker = new google.maps.Marker({
-    position: { lat: -33.89, lng: 151.274 },
+    position: { lat: 48, lng: 37 },
     map,
-    icon: image,
+    icon: {url:image,
+      labelOrigin: new google.maps.Point(0,0)
+    },
+    label: {
+      text: "Швидко котята"
+    },
+    title: "Тест"
+    //labelOrigin: 
   });
 }
+
 
 declare global {
   interface Window {
